@@ -2,10 +2,10 @@
 // let firstElement = document.getElementById("one").className="green";
 // console.log(firstElement);
 
-// var firstName = document.getElementsByClassName("green");
-// firstName[0].className = "yellow";
+var firstName = document.getElementsByClassName("green");
+firstName[0].className = "yellow";
 
-// console.log(firstName);
+console.log(firstName);
 // var firstName =  document.getElementsByTagName("li");
 // firstName[0].className="green";
 
@@ -309,21 +309,21 @@
 // check()
 // console.log(check);
 
-$("#adder").ready(function(){
-    $("#submitButton").click(function(){
-        var num1 = parseFloat($("#num1").val());
-        var num2 = parseFloat($('#num2'));
-        if (isNaN(num1)|| isNaN(num2)){
-            $("#the-value").text('please enter numeric value');
-        }else{
-            var sum = num1 + num2;
-            var average = sum / 2;
-            console.log('sum:',sum);
-            console.log('average:',average);
-            $("sum").tet('sum:', + sum + 'average:', + average );
-        }
-    });
-});
+// $("#adder").ready(function(){
+//     $("#submitButton").click(function(){
+//         var num1 = parseFloat($("#num1").val());
+//         var num2 = parseFloat($('#num2'));
+//         if (isNaN(num1)|| isNaN(num2)){
+//             $("#the-value").text('please enter numeric value');
+//         }else{
+//             var sum = num1 + num2;
+//             var average = sum / 2;
+//             console.log('sum:',sum);
+//             console.log('average:',average);
+//             $("sum").tet('sum:', + sum + 'average:', + average );
+//         }
+//     });
+// });
 
 
 
