@@ -47,8 +47,8 @@
 // console.log(select);
 // var select=document.querySelector("#techCompanies");
 // console.log(select);
-var c=document.querySelectorAll("li").length;
-console.log(c);
+// var c=document.querySelectorAll("li").length;
+// console.log(c);
 // function cout(){
 //     var C=0;
 
@@ -98,9 +98,9 @@ console.log(c);
 
 //  EVENT
 
-// function    ABEBE(){
-//     alert("hello abe")
-// }
+function    ABEBE(){
+    alert("hello abe")
+}
 // ABEBE()
 //  var list = document.querySelector(".red");
 //  function changeBckgroundColor() {
