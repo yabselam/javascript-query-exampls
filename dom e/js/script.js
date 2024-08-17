@@ -113,25 +113,25 @@
 // }
 // re();
 
-var el=document.getElementById("change-bg");
-el.onclick=changeBackground;
-var el2=document.getElementById("HH");
-el2.onmouseover=remove;
-function changeBackground(){
-    document.body.style.backgroundColor="#f56a79";
-}
-function remove(){
-    document.body.style.backgroundColor="";
-}
+// var el=document.getElementById("change-bg");
+// el.onclick=changeBackground;
+// var el2=document.getElementById("HH");
+// el2.onmouseover=remove;
+// function changeBackground(){
+//     document.body.style.backgroundColor="#f56a79";
+// }
+// function remove(){
+//     document.body.style.backgroundColor="";
+// }
 
 // var el = document.getElementById("change-bg");
 //1:59:27
 
 // var el = document.getElementById("change-bg");
 // el.addEventListener("click" ,changeBackground);
-// // el.addEventListener("click" ,function(){
-// //  document.body.style.backgroundColor="#f56a79";
-// // });
+// el.addEventListener("click" ,function(){
+//  document.body.style.backgroundColor="#f56a79";
+// });
 // function changeBackground(){
 //     document.body.style.backgroundColor="#f56a79";
 // }
@@ -143,7 +143,7 @@ function remove(){
 
 // var yes = document.getElementById("yesBackground");
 // var change=
-// var bt = document.getElementById("yesBackground");
+//  bt = document.getElementById("yesBackground");
 // var se = document.getElementById("ch");
 // bt.addEventListener("click",abb);
 // function abb(){
@@ -182,7 +182,7 @@ function remove(){
 // var el = $("#techCompanies");
 // el.prepend("<li class='yellow'>Added using the prepend method</li>")
 // el.before("icecream")
-// var el = $(".red");
+var el = $(".red");
 
 // el.empty();
 // el.remove()
@@ -325,10 +325,46 @@ function remove(){
 //     });
 // });
 
+// let myform = $("#formID");
+// function checkValidity(e){
+//     e.prevatDefault();
+//     let myInput = $("#formID input");
 
+//     $(myInput.css("background-color",""));
+//       $(myInput.css("background-color", ""));
+//       if($(myInput.val().length ==0)){
+//         myInput.css("background-color","pink");
+//       }
+//        if ($(myInput.val().length == 0)) {
+//          myInput.css("background-color", "pink");
+//        }
+//        if($(myInput.val().length !==0)){
+//         let output= $(myInput.val() + "" +myInput.val())
+//         let result = $("#submitButton");
+//         result.textContent =output;
+//        }
+// }
+//  $("#myform").on("click", checkValidity);
 
+//Asynchronous javascript programming
+ //callback
+let start = Date.now();
+console.log(start)
+var pizza;
+function orderPizza(callback){
+    console.log("order pizza");
+    setTimeout(() => {
+       pizza = "pizza";
+       console.log('your $(pizz is ready');
+       callback(pizza);  
+    }, 2000
+    );
+}
+function pizzaReady(pizza){
+    console.log("Eat your $(pizza)");
 
-
+}
+orderPizza(pizzaReady);console.log("call a friend");
 
 
 
