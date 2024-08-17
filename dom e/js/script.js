@@ -98,9 +98,9 @@
 
 //  EVENT
 
-function    ABEBE(){
-    alert("hello abe")
-}
+// function    ABEBE(){
+//     alert("hello abe")
+// }
 // ABEBE()
 //  var list = document.querySelector(".red");
 //  function changeBckgroundColor() {
@@ -113,16 +113,16 @@ function    ABEBE(){
 // }
 // re();
 
-// var el=document.getElementById("change-bg");
-// el.onclick=changeBackground;
-// var el2=document.getElementById("HH");
-// el2.onmouseover=remove;
-// function changeBackground(){
-//     document.body.style.backgroundColor="#f56a79";
-// }
-// function remove(){
-//     document.body.style.backgroundColor="";
-// }
+var el=document.getElementById("change-bg");
+el.onclick=changeBackground;
+var el2=document.getElementById("HH");
+el2.onmouseover=remove;
+function changeBackground(){
+    document.body.style.backgroundColor="#f56a79";
+}
+function remove(){
+    document.body.style.backgroundColor="";
+}
 
 // var el = document.getElementById("change-bg");
 //1:59:27
