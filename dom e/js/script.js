@@ -2,10 +2,10 @@
 // let firstElement = document.getElementById("one").className="green";
 // console.log(firstElement);
 
-var firstName = document.getElementsByClassName("green");
-firstName[0].className = "yellow";
+// var firstName = document.getElementsByClassName("green");
+// firstName[0].className = "yellow";
 
-console.log(firstName);
+// console.log(firstName);
 // var firstName =  document.getElementsByTagName("li");
 // firstName[0].className="green";
 
@@ -28,13 +28,13 @@ console.log(firstName);
 // TT.className = "green";
 // console.log(TT);
 
-// var el=document.getElementById("two");
-// console.log(el);
-// el.textContent="ice-cream";
-// var tp=document.createElement("p");
-// tp.textContent="Abebe beso belaa";
-// console.log(tp);
-// document.body.appendChild(tp);
+var el=document.getElementById("two");
+console.log(el);
+el.textContent="ice-cream";
+var tp=document.createElement("p");
+tp.textContent="Abebe beso belaa";
+console.log(tp);
+document.body.appendChild(tp);
 
 //Exercise
 //Question 1
