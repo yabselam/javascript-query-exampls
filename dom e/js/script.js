@@ -28,13 +28,13 @@
 // TT.className = "green";
 // console.log(TT);
 
-var el=document.getElementById("two");
-console.log(el);
-el.textContent="ice-cream";
-var tp=document.createElement("p");
-tp.textContent="Abebe beso belaa";
-console.log(tp);
-document.body.appendChild(tp);
+// var el=document.getElementById("two");
+// console.log(el);
+// el.textContent="ice-cream";
+// var tp=document.createElement("p");
+// tp.textContent="Abebe beso belaa";
+// console.log(tp);
+// document.body.appendChild(tp);
 
 //Exercise
 //Question 1
@@ -47,8 +47,8 @@ document.body.appendChild(tp);
 // console.log(select);
 // var select=document.querySelector("#techCompanies");
 // console.log(select);
-// var c=select.querySelectorAll("li").length;
-// console.log(c);
+var c=document.querySelectorAll("li").length;
+console.log(c);
 // function cout(){
 //     var C=0;
 
