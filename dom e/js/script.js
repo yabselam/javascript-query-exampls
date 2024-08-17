@@ -274,19 +274,56 @@
 // add.addEventListener("submit", cheackValiditye);
 
 
-console.log($("input {name='first name'}").val());
+// console.log($("input {name='first name'}").val());
 //Question 3
+// if(myInput[o].value.length !==0 && myInput[1].value.length){
+//     let output=Number(myInput[0].value)+ Number(myInput[1].value);
+//     let result=document.getElementById("result");
+//     result.textContent=outPut;
+// }
+// myForm.addEventListner("sumbit",checkValidity);
+// var se = $("#adder");
+// function checkValidty(){
+//     let myInput = $("#adder input");
+//     if ($(myInput.val().length !== 0 )) {
+//       let output = Number(myInput[0].value) + Number(myInput[1].value);
+//       let result = $("#submitButton");
+//       result.textContent = output;
+//     }
+// }
 
-var se = $("#the-value");
+// //   se.addEventListner("click", checkValidty);
+// $("#susubmitButtonbmit").on("click", checkValidty);
+
+
+// se=2;
 // se=check;
 // se.isNumber();
-function check(){
-    $(isNumeric());
-    return se;
-}
-check()
+// if($.isNumeric()){
+//     // se=2;
+//     console.log("hi");
+// }
+// function check(){
+   
+// }
+// check()
 // console.log(check);
 
+$("#adder").ready(function(){
+    $("#submitButton").click(function(){
+        var num1 = parseFloat($("#num1").val());
+        var num2 = parseFloat($('#num2'));
+        if (isNaN(num1)|| isNaN(num2)){
+            $("#the-value").text('please enter numeric value');
+        }else{
+            var sum = num1 + num2;
+            var average = sum / 2;
+            console.log('sum:',sum);
+            console.log('average:',average);
+            $("sum").tet('sum:', + sum + 'average:', + average );
+        }
+    });
+});
 
 
 
