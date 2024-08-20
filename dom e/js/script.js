@@ -381,25 +381,41 @@ var el = $(".red");
 
 //Asinc Await
 
-async function logData(params) {
-    try{
-        let response = await fetch("https://randomuser.me/api");
-        let data = await response.json();
-        console.log(data);
-        const user = data.results[0];
-        console.log(user);
-    }catch (error){
-        console.log(error);
+// async function logData(params) {
+//     try{
+//         let response = await fetch("https://randomuser.me/api");
+//         let data = await response.json();
+//         console.log(data);
+//         const user = data.results[0];
+//         console.log(user);
+//     }catch (error){
+//         console.log(error);
+//     }
+// }
+
+// logData();
+
+
+// creatng our own promise
+let test = new Promise((resolve , reject) =>{resolve("hi")
+    resolve("hi")
+
+})
+console.log(test)
+
+let myPromise = new Promise(function(resolve, reject){
+    resolve();
+    reject();
+});
+const myFristPromise = new Promise((resolve, reject) =>{
+    const condition =false;
+    if(condition){
+        resolve("hi there")
+    }else{
+        reject("sorry")
     }
-}
-
-logData();
-
-
-
-
-
-
+})
+ myFristPromise.then((data) => console.log("data >>", data)).catch((err) => console.log("error >>>",err));
 
 
 
