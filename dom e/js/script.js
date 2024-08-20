@@ -366,21 +366,34 @@ var el = $(".red");
 // }
 // orderPizza(pizzaReady);console.log("call a friend");
 
-//fetch
-fetch("https://randomuser.me/api").then(function(res){
-    console.log(res)
-    return res.json();
-}).then((data) => console.log(data));
+// //fetch
+// fetch("https://randomuser.me/api").then(function(res){
+//     console.log(res)
+//     return res.json();
+// }).then((data) => console.log(data));
 
-fetch("https://randomuser123.me/api")
-  .then(function (res) {
-    console.log(res);
-    return res.json();
-  })
-  .then((data) => console.log(data.results[0])).catch((err) => console.log("something went wrong >>>",err));
+// fetch("https://randomuser123.me/api")
+//   .then(function (res) {
+//     console.log(res);
+//     return res.json();
+//   })
+//   .then((data) => console.log(data.results[0])).catch((err) => console.log("something went wrong >>>",err));
 
+//Asinc Await
 
+async function logData(params) {
+    try{
+        let response = await fetch("https://randomuser.me/api");
+        let data = await response.json();
+        console.log(data);
+        const user = data.results[0];
+        console.log(user);
+    }catch (error){
+        console.log(error);
+    }
+}
 
+logData();
 
 
 
