@@ -348,25 +348,36 @@ var el = $(".red");
 
 //Asynchronous javascript programming
  //callback
-let start = Date.now();
-console.log(start)
-var pizza;
-function orderPizza(callback){
-    console.log("order pizza");
-    setTimeout(() => {
-       pizza = "pizza";
-       console.log('your $(pizz is ready');
-       callback(pizza);  
-    }, 2000
-    );
-}
-function pizzaReady(pizza){
-    console.log("Eat your $(pizza)");
+// let start = Date.now();
+// console.log(start)
+// var pizza;
+// function orderPizza(callback){
+//     console.log("order pizza");
+//     setTimeout(() => {
+//        pizza = "pizza";
+//        console.log('your $(pizz is ready');
+//        callback(pizza);  
+//     }, 2000
+//     );
+// }
+// function pizzaReady(pizza){
+//     console.log("Eat your $(pizza)");
 
-}
-orderPizza(pizzaReady);console.log("call a friend");
+// }
+// orderPizza(pizzaReady);console.log("call a friend");
 
+//fetch
+fetch("https://randomuser.me/api").then(function(res){
+    console.log(res)
+    return res.json();
+}).then((data) => console.log(data));
 
+fetch("https://randomuser123.me/api")
+  .then(function (res) {
+    console.log(res);
+    return res.json();
+  })
+  .then((data) => console.log(data.results[0])).catch((err) => console.log("something went wrong >>>",err));
 
 
 
