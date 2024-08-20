@@ -397,28 +397,20 @@ var el = $(".red");
 
 
 // creatng our own promise
-let test = new Promise((resolve , reject) =>{resolve("hi")
-    resolve("hi")
+// 
+//creating alarm using promise 
+function alarm(person, delay){
+    return new Promise((resolve, reject) => {
+        if(delay < 0){
+            reject("Alarm delay can not be negative");
+        }
+        setTimeout(() => {
+            resolve('wake up, ${person}!');
+        },delay);
+    });
+}
 
-})
-console.log(test)
-
-let myPromise = new Promise(function(resolve, reject){
-    resolve();
-    reject();
-});
-const myFristPromise = new Promise((resolve, reject) =>{
-    const condition =false;
-    if(condition){
-        resolve("hi there")
-    }else{
-        reject("sorry")
-    }
-})
- myFristPromise.then((data) => console.log("data >>", data)).catch((err) => console.log("error >>>",err));
-
-
-
+alarm("abebe", 2000).then((data) => alert(data)).catch((err) => console.log(err));
 
 
 
